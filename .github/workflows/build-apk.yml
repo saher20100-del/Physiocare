@@ -13,7 +13,7 @@ jobs:
         with:
           flutter-version: '3.22.0'
           channel: 'stable'
-      - name: Generate Android folder
+      - name: Create android folder
         run: flutter create. --platforms=android --project-name physiocare_therapist
       - run: flutter pub get
       - run: flutter build apk --release --no-tree-shake-icons
